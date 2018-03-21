@@ -1,4 +1,4 @@
-(function () {
+define(function () {
 
     function todoList() { }
 
@@ -41,8 +41,13 @@
         });
     }
 
-    todoList.display = display;
-    todoList.add = add;
+    //todoList.display = display;
+    //todoList.add = add;
 
-    window.todoList = todoList;
-})();
+    //window.todoList = todoList;
+	
+	return {
+        display: display,
+		add: add
+    };
+});
